@@ -43,3 +43,17 @@ m = matrix(c('a', 'b',
 arr = array(c(1:24), c(4, 3, 2))
 # 3D array
 
+## Data Frame ==============================================
+
+# Can combine vectors of the same length
+vNums = c(1, 2, 3)
+vChars = c('a', 'b', 'c')
+mat = cbind(vNums, vChars)
+is.matrix(mat)  # TRUE -- it's a MATRIX
+
+mat  # Coerces all values to most basic data type
+     # characters in this case
+
+df2 = as.data.frame(cbind(vNums, vChars))
+df2  # Makes a data frame with different data types
+is.data.frame(df2)
