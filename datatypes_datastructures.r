@@ -7,6 +7,12 @@ typeof(x)  # "double"
 x = "c"
 xyz = 'abc'  # another "character"
 
+typeof("1971-01-01")  # character
+
+typeof(as.Date("1971-01-01"))  # double, but x = "1971-01-01"
+
+unclass(as.Date("1971-01-01"))  # 365
+
 # "logical"
 x = TRUE
 #same type
